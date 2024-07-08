@@ -1,0 +1,61 @@
+Create React Ecommerce website Project: react-shoppers-choice
+
+Requirements:
+- Install Visual Studio
+- Install vscode pluggins eslint and prettier
+- Change settings : File -> pref -> settings -> Format on Save
+- node.js version: v21.7.3
+- npm version: 10.5.0
+- react version: 
+
+1. Create Images for Men, Women, Children of 515 X 515 dimensions through AI
+
+2. create react-shoppers-choice through create-react-app bootstrap command.
+    a) npx create-react-app react-shoppers-choice
+    b) Update below versions in package.json:
+        "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-router-dom": "^6.22.3",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+        }
+    c)After updating the dependencies versions in package.json
+         - Delete package-lock.json and node_modules
+         - Open new terminal
+         - run to update package:
+            - npm install
+    d) Start the new application to check if everything looks Ok!        
+    - npm start
+    
+3. Create the app with below features:  
+    1) List all the clothings for Men, Women and Children
+    2) Create Whislist
+    3) Category : Men, Women, Children
+    4) Sort by ratings
+    Note:
+    a) create logo.png and fav.png in public folder
+    b) create shopping images in public/images folder
+    
+- Note: 
+    - Reference course : Develop React JS web applications including components, state, effect, hooks, React router, reducer, context, etc
+    - course/master-react/learn/lecture/43467284#overview   
+
+=========================================================================================================
+Git Repository creation Steps:
+----------------------------------
+…or create a new repository on the command line
+echo "# react-shoppers-choice" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gmdjaveed/react-shoppers-choice.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/gmdjaveed/react-shoppers-choice.git
+git branch -M main
+git push -u origin main    
