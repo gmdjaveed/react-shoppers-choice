@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles.css";
-import ItemCard from "./ItemCard";
+import Item from "./Item";
 
 export default function ItemsGrid({ items, wishlist, toggleWishlist }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -99,12 +99,12 @@ export default function ItemsGrid({ items, wishlist, toggleWishlist }) {
 
       <div className="items-grid">
         {filteredItems.map((item) => (
-          <ItemCard
+          <Item
             item={item}
             key={item.id}
             toggleWishlist={toggleWishlist}
             isWishlisted={wishlist.includes(item.id)}
-          ></ItemCard>
+          ></Item>
         ))}
       </div>
     </div>

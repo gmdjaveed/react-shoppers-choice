@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles.css";
-import ItemCard from "./ItemCard";
+import Item from "./Item";
 
 export default function Wishlist({ items, wishlist, toggleWishlist }) {
   return (
@@ -10,12 +10,12 @@ export default function Wishlist({ items, wishlist, toggleWishlist }) {
         {wishlist.map((id) => {
           const item = items.find((item) => item.id === id);
           return (
-            <ItemCard
+            <Item
               key={id}
               item={item}
               toggleWishlist={toggleWishlist}
               isWishlisted={true}
-            ></ItemCard>
+            ></Item>
           );
         })}
       </div>

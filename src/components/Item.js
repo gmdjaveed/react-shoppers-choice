@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles.css";
 
-export default function ItemCard({ item, isWishlisted, toggleWishlist }) {
+export default function Item({ item, isWishlisted, toggleWishlist }) {
   const handleError = (e) => {
     e.target.src = "images/default.jpg";
   };
@@ -15,17 +15,17 @@ export default function ItemCard({ item, isWishlisted, toggleWishlist }) {
   };
 
   return (
-    <div key={item.id} className="item-card">
+    <div key={item.id} className="item">
       <img
         src={`images/${item.image}`}
         alt={item.title}
         onError={handleError}
       />
-      <div className="item-card-info">
-        <h3 className="item-card-title">{item.title}</h3>
+      <div className="item-info">
+        <h3 className="item-title">{item.title}</h3>
         <div>
-          <span className="item-card-category">{item.category}</span>
-          <span className={`item-card-rating ${getRatingClass(item.rating)}`}>
+          <span className="item-category">{item.category}</span>
+          <span className={`item-rating ${getRatingClass(item.rating)}`}>
             {item.rating}
           </span>
         </div>
